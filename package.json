@@ -1,0 +1,25 @@
+{
+  "name": "build_a_library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexander-C-Rogers/Buil_a_Library.git"
+  },
+  "author": "Alexander-C-ROgers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexander-C-Rogers/Buil_a_Library/issues"
+  },
+  "homepage": "https://github.com/Alexander-C-Rogers/Buil_a_Library#readme",
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  },
+  "dependencies": {
+    "mysql2": "^2.2.5"
+  }
+}
