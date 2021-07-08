@@ -57,6 +57,28 @@ class Movie extends Media {
     }
 }
 
+class Cd extends Media {
+  constructor(title, artist, songs) {
+    super(title);
+    this._artist = artist;
+  	this._songs = songs;
+  }
+  get artist() {
+    return this._artist;
+  }
+  get songs() {
+    return this._songs;
+  }
+  shuffle() {
+    const a = this._songs;   
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+}
+
 const historyOfEverything = new Book('Bill Bryson', 'A Short History of Nearly Everything', 544);
 historyOfEverything.toggleCheckOutStatus();
 console.log(historyOfEverything.isCheckedOut);
